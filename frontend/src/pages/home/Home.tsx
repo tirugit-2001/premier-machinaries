@@ -1,13 +1,13 @@
-import { SwiperSlide } from "swiper/react";
-import Carousel from "../../components/common/carousel/Carousel";
+// import { SwiperSlide } from "swiper/react";
+// import Carousel from "../../components/common/carousel/Carousel";
 import RawImg from "../../components/common/image/RawImage";
 import ProductCard from "../../components/specific/productspage/ProductCard";
-import ProductMaincard from "../../components/specific/productspage/ProductMaincard";
+// import ProductMaincard from "../../components/specific/productspage/ProductMaincard";
 import {
   // bannerdata,
   brands,
   productCategories,
-  productPageCards,
+  // productPageCards,
 } from "../../utilities";
 // import BannerCard from "../../components/specific/home/banner/BannerCard";
 
