@@ -42,13 +42,13 @@ const Home: React.FC = () => {
           </p>
         </div>
         <div className="h-[550px] max-[350px]:h-[500px] w-[80%] max-[1000px]:w-[100%] max-[1000px]:px-4">
-          <Carousel type="product_cards">
+          {/* <Carousel type="product_cards">
             {productPageCards.map((item, index) => (
               <SwiperSlide>
                 <ProductMaincard {...item} key={index} />
               </SwiperSlide>
             ))}
-          </Carousel>
+          </Carousel> */}
         </div>
       </div>
       <div className=" w-full  bg-sky-600 p-5  max-md:max-w-full">
