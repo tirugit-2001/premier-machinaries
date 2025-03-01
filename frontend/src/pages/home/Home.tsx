@@ -4,12 +4,12 @@ import RawImg from "../../components/common/image/RawImage";
 import ProductCard from "../../components/specific/productspage/ProductCard";
 import ProductMaincard from "../../components/specific/productspage/ProductMaincard";
 import {
-  bannerdata,
+  // bannerdata,
   brands,
   productCategories,
   productPageCards,
 } from "../../utilities";
-import BannerCard from "../../components/specific/home/banner/BannerCard";
+// import BannerCard from "../../components/specific/home/banner/BannerCard";
 
 const Home: React.FC = () => {
   const statistics = [
