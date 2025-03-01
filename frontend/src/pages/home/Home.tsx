@@ -1,15 +1,15 @@
-// import { SwiperSlide } from "swiper/react";
-// import Carousel from "../../components/common/carousel/Carousel";
+import { SwiperSlide } from "swiper/react";
+import Carousel from "../../components/common/carousel/Carousel";
 import RawImg from "../../components/common/image/RawImage";
 import ProductCard from "../../components/specific/productspage/ProductCard";
-// import ProductMaincard from "../../components/specific/productspage/ProductMaincard";
+import ProductMaincard from "../../components/specific/productspage/ProductMaincard";
 import {
-  // bannerdata,
+  bannerdata,
   brands,
   productCategories,
-  // productPageCards,
+  productPageCards,
 } from "../../utilities";
-// import BannerCard from "../../components/specific/home/banner/BannerCard";
+import BannerCard from "../../components/specific/home/banner/BannerCard";
 
 const Home: React.FC = () => {
   const statistics = [
@@ -23,13 +23,13 @@ const Home: React.FC = () => {
       <div className=" banner_bg ">
         <div className="backdrop-blur bg-gray-400/10 py-10">
           <div className="w-[90%] max-[1000px]:w-[100%] mx-auto">
-            {/* <Carousel type="banner">
+            <Carousel type="banner">
               {bannerdata.map((item, index) => (
                 <SwiperSlide key={index} className="px-18">
                   <BannerCard {...item} key={index} />
                 </SwiperSlide>
               ))}
-            </Carousel> */}
+            </Carousel>
           </div>
         </div>
       </div>
@@ -42,13 +42,13 @@ const Home: React.FC = () => {
           </p>
         </div>
         <div className="h-[550px] max-[350px]:h-[500px] w-[80%] max-[1000px]:w-[100%] max-[1000px]:px-4">
-          {/* <Carousel type="product_cards">
+          <Carousel type="product_cards">
             {productPageCards.map((item, index) => (
               <SwiperSlide>
                 <ProductMaincard {...item} key={index} />
               </SwiperSlide>
             ))}
-          </Carousel> */}
+          </Carousel>
         </div>
       </div>
       <div className=" w-full  bg-sky-600 p-5  max-md:max-w-full">
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
               <RawImg
                 image={category.image}
                 altText={category.altText}
-                className="object-contain w-[150px]"
+                className="w-[150px]"
               />
             </div>
           ))}
