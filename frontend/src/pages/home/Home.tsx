@@ -23,13 +23,13 @@ const Home: React.FC = () => {
       <div className=" banner_bg ">
         <div className="backdrop-blur bg-gray-400/10 py-10">
           <div className="w-[90%] max-[1000px]:w-[100%] mx-auto">
-            <Carousel type="banner">
+            {/* <Carousel type="banner">
               {bannerdata.map((item, index) => (
                 <SwiperSlide key={index} className="px-18">
                   <BannerCard {...item} key={index} />
                 </SwiperSlide>
               ))}
-            </Carousel>
+            </Carousel> */}
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ const Home: React.FC = () => {
           <div className="flex max-[1200px]:justify-center flex-col  w-6/12 max-md:ml-0 max-md:w-full">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/fe9961fc30c9e8bfe126cd1e596f2ad07e59acb08d322eb42bc136b9a1875e4f?apiKey=00bedd7c3997447984bf9cef0c80b29a&"
+              src="https://images.unsplash.com/photo-1604328702728-d26d2062c20b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Premier Machineries facility"
               className=" w-full object-contain max-md:max-w-full"
             />
