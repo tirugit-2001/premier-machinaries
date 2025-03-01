@@ -10,7 +10,9 @@ const Product = () => {
       <div className="p-3 flex max-600px]:text-sm max-[500px]:flex-col max-[600px]:gap-6 gap-8 max-[600px]:items-start items-center justify-end">
         {productPageNavitems.map((item, ind) => (
           <span
-            className="cursor-pointer"
+            className={`${
+              activecategory == item.path && "text-sky-400"
+            } cursor-pointer`}
             key={ind}
             onClick={() => {
               setActiveActiveCategory(item.path);

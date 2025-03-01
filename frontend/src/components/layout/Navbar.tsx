@@ -8,20 +8,18 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [toggle, setToggle] = useState<boolean>(false);
+  let timeoutId: any = null;
+
   const handleNavigation = (sectionId: string) => {
     if (location.pathname !== "/") {
-      // Redirect to home page and scroll after navigation
       navigate("/", { state: { scrollTo: sectionId } });
     } else {
-      // Already on home page, scroll directly
       scrollToSection(sectionId);
     }
   };
 
-  let timeoutId: any = null;
-
   const scrollToSection = (sectionId: string) => {
-    if (timeoutId) clearTimeout(timeoutId); // Clear any previous timeout
+    if (timeoutId) clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
       const section = document.getElementById(sectionId);
       if (section) {
@@ -38,11 +36,13 @@ const Navbar = () => {
   return (
     <header className="flex relative flex-col ">
       <div className="flex  px-8 justify-between items-center w-full max-md:px-5 max-md:py-3 max-sm:justify-between max-sm:px-4 max-sm:py-3">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/f06f8fb2478dfda44b43333059ae5677070fbfc7fa3a8413ab7237628439a702?apiKey=00bedd7c3997447984bf9cef0c80b29a&"
-          alt="Logo"
-          className="object-contain h-[66px] w-[93px] max-sm:w-20 max-sm:h-[57px]"
-        />
+        <Link to={"/"}>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/f06f8fb2478dfda44b43333059ae5677070fbfc7fa3a8413ab7237628439a702?apiKey=00bedd7c3997447984bf9cef0c80b29a&"
+            alt="Logo"
+            className="object-contain h-[66px] w-[93px] max-sm:w-20 max-sm:h-[57px]"
+          />
+        </Link>
         <nav className="flex gap-8 items-center max-md:gap-5 max-[800px]:hidden">
           {nav_items.map((item, index) => (
             <Link to={item.path} className=" no-underline" key={index}>
@@ -50,13 +50,17 @@ const Navbar = () => {
             </Link>
           ))}
           <a
+            href="#about"
             className="cursor-pointer"
             onClick={() => handleNavigation("about")}
           >
             About
           </a>
-          <a className="cursor-pointer" href="#footer">
+          <a className="cursor-pointer" href="#contact">
             Locations
+          </a>
+          <a className="cursor-pointer" href="#contact">
+            Contact Us
           </a>
           <a
             href="tel:+91123456979"
@@ -92,10 +96,7 @@ const Navbar = () => {
                   onClick={() => {
                     setToggle(!toggle);
                   }}
-                  className="gap-1
-         text-white
-           
-            hover:text-sky-800"
+                  className="gap-1 text-white hover:text-sky-800"
                   key={ind}
                   to={item.path}
                 >
@@ -105,26 +106,30 @@ const Navbar = () => {
               <a
                 onClick={() => {
                   setToggle(!toggle);
+                  handleNavigation("about");
                 }}
-                className="gap-1
-         text-white
-           
-            hover:text-sky-800"
+                className="gap-1 text-white hover:text-sky-800"
                 href="/#about"
               >
                 About
               </a>
               <a
+                href="#contact"
                 onClick={() => {
                   setToggle(!toggle);
                 }}
-                className="gap-1
-         text-white
-           
-            hover:text-sky-800"
-                href="#footer"
+                className="gap-1 cursor-pointer text-white hover:text-sky-800"
               >
                 Locations
+              </a>
+              <a
+                href="#contact"
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+                className="gap-1 cursor-pointer text-white hover:text-sky-800"
+              >
+                Contact Us
               </a>
             </div>
           </div>
@@ -132,7 +137,7 @@ const Navbar = () => {
       </div>
 
       <div className="bg-black flex max-[350px]:flex-col max-[350px]:justify-center justify-end items-center gap-9 max-[350px]:gap-5 p-4">
-        <div className="flex  max-[350px]:gap-5 gap-6 text-white max-[350px]:text-start items-center">
+        <div className="flex max-[350px]:gap-5 gap-6 text-white max-[350px]:text-start items-center">
           <a href="">
             <img src={iconsImages.twitter} alt="twitter" />
           </a>

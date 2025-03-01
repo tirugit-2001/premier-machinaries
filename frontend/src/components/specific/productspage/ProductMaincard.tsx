@@ -27,7 +27,7 @@ const ProductMaincard = ({
           </div>
         </section>
         <a
-          href="#footer"
+          href="#contact"
           className="gap-2.5 max-[300px]:w-[100px] cursor-pointer self-stretch px-4 py-2 text-white whitespace-nowrap bg-sky-600 rounded-sm w-[143px]"
           aria-label="Consult about Yueming Laser Cutting Machine"
         >

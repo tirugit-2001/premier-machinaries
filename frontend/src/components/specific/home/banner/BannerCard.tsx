@@ -9,7 +9,7 @@ const BannerCard = ({
 }: ProductPageCardType) => {
   return (
     <div className="flex gap-5  max-[450px]:px-0 px-4 justify-between max-[768px]:flex-col-reverse  w-full">
-      <div className="flex text-white flex-1 text-justify  justify-center max-[600px]:gap-3 gap-5 flex-col">
+      <div className="flex max-[400px]:px-3 text-white flex-1 text-justify  justify-center max-[600px]:gap-3 gap-5 flex-col">
         <h1 className="text-3xl max-[400px]:text-xl max-[600px]:text-2xl">
           {title}
         </h1>
@@ -25,14 +25,14 @@ const BannerCard = ({
         </ul>
         <div className="flex items-center gap-5">
           <a
-            href="#footer"
+            href="#contact"
             className="gap-2.5 max-[600px]:px-2 max-[400px]:text-sm  text-center cursor-pointer self-stretch px-4 py-2 text-white whitespace-nowrap bg-sky-600 rounded-sm w-[143px] max-[400px]:w-max"
             aria-label={`Consult about ${title}`}
           >
             Consult
           </a>
           <a
-            href="#footer"
+            href="#contact"
             className="gap-2.5 max-[600px]:px-2 max-[400px]:text-sm  text-center border-[0.5px] text-white cursor-pointer self-stretch px-4 py-2  whitespace-nowrap rounded-sm  max-[400px]:w-max w-[143px]"
           >
             Contact Us
