@@ -17,45 +17,27 @@ const productCategories: ProductType[] = [
   },
   {
     image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/9350efc242be86faf4ac4654aebbdfafd1cdbb64eb47089f651419539f48829f?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
+      "https://baisonlaser.com/wp-content/uploads/2022/12/Laser-Cutting-Machines-for-Stainless-Steel.png",
     altText: "Laser Cutting Machine",
     title: "Laser Cutting Machines",
   },
   {
     image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/a2ee0296962bc3030e536a99f62764c5a5dcc420ad0ba5f147877f8f6d619654?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "CNC Router",
-    title: "CNC Routers",
+      "https://machitech.com/wp-content/uploads/2017/02/totalcut-router.jpg",
+    altText: "Cutting And Routing Machines",
+    title: "Cutting And Routing Machines",
   },
   {
     image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/9350efc242be86faf4ac4654aebbdfafd1cdbb64eb47089f651419539f48829f?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Laser Cutting Machine",
-    title: "Laser Cutting Machines",
+      "https://endurancemachinery.com/cdn/shop/products/Products-30Nov2022_3_1200x1200.png?v=1670506077",
+    altText: "Lamination machines",
+    title: "Lamination machines",
   },
   {
     image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/a2ee0296962bc3030e536a99f62764c5a5dcc420ad0ba5f147877f8f6d619654?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "CNC Router",
-    title: "CNC Routers",
-  },
-  {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/9f34fb413fc270189df1a627d00b45e200fe04d02e750effb5b479ff1614a336?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Printing Machine",
-    title: "Printing Machines",
-  },
-  {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/9f34fb413fc270189df1a627d00b45e200fe04d02e750effb5b479ff1614a336?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Printing Machine",
-    title: "Printing Machines",
-  },
-  {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/a2ee0296962bc3030e536a99f62764c5a5dcc420ad0ba5f147877f8f6d619654?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "CNC Router",
-    title: "CNC Routers",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_T0JxqrLNiTh6JCr46YOGFBRdTVX31sUX5A&s",
+    altText: "bending machines",
+    title: "Bending Machines",
   },
 ];
 const brands: Partners[] = [
@@ -197,39 +179,50 @@ const bannerdata: ProductPageCardType[] = [
     altText: "Allwin UV Flatbed Printer",
     contact_link: "https://example.com/contact",
     features: [
-      "Media Type: Rigid materials (Acrylic, Glass, Wood, Metal, etc.)",
-      "Resolution: Up to 1440 dpi",
-      "Fast drying, High durability.",
-      "Multi-layer printing",
+      "Prints on rigid materials",
+      "High resolution up to 1440 dpi",
+      "Fast drying ink",
+      "Supports multi-layer printing",
     ],
   },
   {
     title: "Mefu Lamination Machine",
     image: iconsImages.mefulamination,
-    subtitle: "lamination / safeguard prints",
+    subtitle: "Lamination / Safeguard Prints",
     altText: "Mefu Lamination Machine",
     contact_link: "https://example.com/contact",
     features: [
-      "Provides lamination to safeguard prints from wear and environmental factors",
+      "Protects prints from wear",
+      "Enhances durability",
+      "Suitable for various materials",
+      "Easy operation",
     ],
   },
   {
     title: "Rayt Laser Cutting Machine",
     image: iconsImages.raytlasercuttingm,
     altText: "Rayt Laser Cutting Machine",
-    subtitle: "Precise cuts / Laser Cutting",
+    subtitle: "Precise Cuts / Laser Cutting",
     contact_link: "https://example.com/contact",
     features: [
-      "Tailored for precise and efficient cutting tasks in signage production",
+      "Precision laser cutting",
+      "Ideal for signage production",
+      "High-speed performance",
+      "Supports various materials",
     ],
   },
   {
     title: "TigerTec CNC Router",
     image: iconsImages.tigerteccnrouter,
-    subtitle: "high accuracy/ precision cutting ",
+    subtitle: "High Accuracy / Precision Cutting",
     altText: "TigerTec CNC Router",
     contact_link: "https://example.com/contact",
-    features: ["cutting, carving", "and engraving with high accuracy"],
+    features: [
+      "Cuts, carves, and engraves",
+      "High accuracy performance",
+      "Works on multiple materials",
+      "User-friendly controls",
+    ],
   },
 ];
 
@@ -410,6 +403,12 @@ const productPageCardCategory: Record<string, ProductPageCardType[]> = {
   ],
 };
 
+const statistics = [
+  { value: "40+", label: "Leading Brands" },
+  { value: "20,000+", label: "Units Supplied Annually" },
+  { value: "100+", label: "Service Excellence Awards" },
+];
+
 const productPageNavitems = [
   { path: "printers", title: "Printing Machines" },
   {
@@ -431,4 +430,5 @@ export {
   bannerdata,
   productPageCardCategory,
   productPageNavitems,
+  statistics,
 };

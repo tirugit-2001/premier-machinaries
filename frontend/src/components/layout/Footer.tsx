@@ -5,14 +5,17 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-950 flex flex-col gap-19  max-[900px]:p-10 p-16">
+    <footer
+      id="footer"
+      className="bg-neutral-950 flex flex-col gap-19  max-[900px]:p-10 p-16"
+    >
       <div className="">
         <h3 className="text-2xl text-white mb-4">Our Offices</h3>
         <div className="flex max-[900px]:flex-col mt-3 gap-10">
           {addresses.map((address, index) => (
             <div
               key={index}
-              className="flex-[0.8] max-[500px]:flex-col  max-[500px]:gap-5 justify-between text-white  border-[0.3px] py-5 max-[500px]:px-2 px-8 border-white  flex "
+              className="flex-[0.8] max-[500px]:flex-col  max-[500px]:gap-5 justify-between text-white  border-[0.3px] py-5 max-[500px]:px-4 px-8 border-white  flex "
             >
               <div className="flex flex-col  gap-4">
                 <h4 className="text-xl">{address.city} Office</h4>

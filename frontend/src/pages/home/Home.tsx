@@ -10,14 +10,8 @@ import {
   productPageCards,
 } from "../../utilities";
 import BannerCard from "../../components/specific/home/banner/BannerCard";
-
+import { statistics } from "../../utilities";
 const Home: React.FC = () => {
-  const statistics = [
-    { value: "40+", label: "Leading Brands" },
-    { value: "20,000+", label: "Units Supplied Annually" },
-    { value: "100+", label: "Service Excellence Awards" },
-  ];
-
   return (
     <div className="h-full flex flex-col gap-24">
       <div className=" banner_bg ">
@@ -26,7 +20,7 @@ const Home: React.FC = () => {
             <Carousel type="banner">
               {bannerdata.map((item, index) => (
                 <SwiperSlide key={index} className="px-18">
-                  <BannerCard {...item} key={index} />
+                  <BannerCard {...item} />
                 </SwiperSlide>
               ))}
             </Carousel>
@@ -36,7 +30,7 @@ const Home: React.FC = () => {
       <div className="flex flex-col items-center py-5 gap-14">
         <div className="text-center">
           <h2 className="text-3xl ">Recomended Products</h2>
-          <p className="mt-2">
+          <p className="mt-2 max-[600px]:px-3">
             Integrated enterprise of R&D, production and sales of CNC printing
             and cutting equipment
           </p>
@@ -44,24 +38,24 @@ const Home: React.FC = () => {
         <div className="h-[550px] max-[350px]:h-[500px] w-[80%] max-[1000px]:w-[100%] max-[1000px]:px-4">
           <Carousel type="product_cards">
             {productPageCards.map((item, index) => (
-              <SwiperSlide>
-                <ProductMaincard {...item} key={index} />
+              <SwiperSlide key={index}>
+                <ProductMaincard {...item} />
               </SwiperSlide>
             ))}
           </Carousel>
         </div>
       </div>
-      <div className=" w-full  bg-sky-600 p-5  max-md:max-w-full">
+      <div id="about" className=" w-full bg-sky-600 max-md:max-w-full">
         <div className="flex gap-10 max-md:flex-col">
           <div className="flex max-[1200px]:justify-center flex-col  w-6/12 max-md:ml-0 max-md:w-full">
             <img
               loading="lazy"
               src="https://images.unsplash.com/photo-1604328702728-d26d2062c20b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Premier Machineries facility"
-              className=" w-full object-contain max-md:max-w-full"
+              className=" w-full max-[600px]:object-contain max-md:max-w-full"
             />
           </div>
-          <div className="flex flex-col  ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+          <div className="flex p-5 flex-col max-[768px]:py-4 max-[768px]:pb-4 ml-5 w-6/12 max-md:ml-0 max-md:w-full">
             <div className="flex   flex-col justify-center self-stretch my-auto w-full text-white min-h-[380px] max-md:mt-10 max-md:max-w-full">
               <div className="flex flex-col w-full max-md:max-w-full">
                 <h2 className="text-2xl font-semibold">About us</h2>
@@ -85,9 +79,9 @@ const Home: React.FC = () => {
                 {statistics.map((stat, index) => (
                   <div
                     key={index}
-                    className="flex flex-col justify-center items-center self-stretch my-auto"
+                    className="flex flex-col  self-stretch my-auto"
                   >
-                    <div className="text-2xl max-[768px]:text-lg max-[1000px]:text-xl ">
+                    <div className="text-2xl max-[768px]:text-lg max-[1000px]:text-xl">
                       {stat.value}
                     </div>
                     <div className="mt-1 font-light text-sm">{stat.label}</div>
@@ -101,7 +95,7 @@ const Home: React.FC = () => {
       <div className="flex flex-col gap-14">
         <div className="text-center">
           <h2 className="text-3xl ">Products</h2>
-          <p className="mt-2">
+          <p className="mt-2 max-[600px]:px-3">
             Integrated enterprise of R&D, production and sales of CNC printing
             and cutting equipment
           </p>
@@ -120,7 +114,7 @@ const Home: React.FC = () => {
       <div className="flex flex-col mb-20 gap-14">
         <div className="text-center">
           <h2 className="text-3xl ">Our Brands</h2>
-          <p className="mt-2">
+          <p className="mt-2 max-[600px]:px-3">
             Integrated enterprise of R&D, production and sales of CNC printing
             and cutting equipment
           </p>

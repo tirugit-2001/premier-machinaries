@@ -1,11 +1,40 @@
 import { nav_items } from "../../utilities";
 import iconsImages from "../../assets";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [toggle, setToggle] = useState<boolean>(false);
+  const handleNavigation = (sectionId: string) => {
+    if (location.pathname !== "/") {
+      // Redirect to home page and scroll after navigation
+      navigate("/", { state: { scrollTo: sectionId } });
+    } else {
+      // Already on home page, scroll directly
+      scrollToSection(sectionId);
+    }
+  };
+
+  let timeoutId: any = null;
+
+  const scrollToSection = (sectionId: string) => {
+    if (timeoutId) clearTimeout(timeoutId); // Clear any previous timeout
+    timeoutId = setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      scrollToSection(location.state.scrollTo);
+    }
+  }, [location]);
   return (
     <header className="flex relative flex-col ">
       <div className="flex  px-8 justify-between items-center w-full max-md:px-5 max-md:py-3 max-sm:justify-between max-sm:px-4 max-sm:py-3">
@@ -20,6 +49,15 @@ const Navbar = () => {
               {item.title}
             </Link>
           ))}
+          <a
+            className="cursor-pointer"
+            onClick={() => handleNavigation("about")}
+          >
+            About
+          </a>
+          <a className="cursor-pointer" href="#footer">
+            Locations
+          </a>
           <a
             href="tel:+91123456979"
             className="flex gap-3 items-center px-5 py-2 text-base text-black no-underline rounded-sm border border-sky-600 border-solid transition-all duration-[0.2s] ease-[ease] max-sm:px-4 max-sm:py-1.5 max-sm:text-sm"
@@ -64,6 +102,30 @@ const Navbar = () => {
                   {item.title}
                 </Link>
               ))}
+              <a
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+                className="gap-1
+         text-white
+           
+            hover:text-sky-800"
+                href="/#about"
+              >
+                About
+              </a>
+              <a
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+                className="gap-1
+         text-white
+           
+            hover:text-sky-800"
+                href="#footer"
+              >
+                Locations
+              </a>
             </div>
           </div>
         )}

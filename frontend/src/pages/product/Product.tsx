@@ -7,7 +7,7 @@ const Product = () => {
     useState<string>("printers");
   return (
     <div className="h-full w-full p-3  min-h-[100vh]">
-      <div className="p-3 flex max-600px]:text-sm  max-[500px]:flex-col max-[600px]:gap-6 gap-8 items-center justify-end">
+      <div className="p-3 flex max-600px]:text-sm max-[500px]:flex-col max-[600px]:gap-6 gap-8 max-[600px]:items-start items-center justify-end">
         {productPageNavitems.map((item, ind) => (
           <span
             className="cursor-pointer"

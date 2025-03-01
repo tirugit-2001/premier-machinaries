@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
 import { ProductPageCardType } from "../../../types";
 
 const ProductMaincard = ({
   title,
   image,
   altText,
-  contact_link,
+
   features,
   subtitle,
 }: ProductPageCardType) => {
@@ -27,13 +26,13 @@ const ProductMaincard = ({
             <p className="mt-2 text-sm">Features: {features.join(",")} </p>
           </div>
         </section>
-        <Link
-          to={contact_link}
+        <a
+          href="#footer"
           className="gap-2.5 max-[300px]:w-[100px] cursor-pointer self-stretch px-4 py-2 text-white whitespace-nowrap bg-sky-600 rounded-sm w-[143px]"
           aria-label="Consult about Yueming Laser Cutting Machine"
         >
           Consult
-        </Link>
+        </a>
       </div>
     </article>
   );

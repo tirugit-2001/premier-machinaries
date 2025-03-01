@@ -1,11 +1,10 @@
 import { ProductPageCardType } from "../../../../types";
-import { Link } from "react-router-dom";
 
 const BannerCard = ({
   title,
   image,
   altText,
-  contact_link,
+
   features,
 }: ProductPageCardType) => {
   return (
@@ -25,15 +24,15 @@ const BannerCard = ({
           ))}
         </ul>
         <div className="flex items-center gap-5">
-          <Link
-            to={contact_link}
+          <a
+            href="#footer"
             className="gap-2.5 max-[600px]:px-2 max-[400px]:text-sm  text-center cursor-pointer self-stretch px-4 py-2 text-white whitespace-nowrap bg-sky-600 rounded-sm w-[143px] max-[400px]:w-max"
             aria-label={`Consult about ${title}`}
           >
             Consult
-          </Link>
+          </a>
           <a
-            href=""
+            href="#footer"
             className="gap-2.5 max-[600px]:px-2 max-[400px]:text-sm  text-center border-[0.5px] text-white cursor-pointer self-stretch px-4 py-2  whitespace-nowrap rounded-sm  max-[400px]:w-max w-[143px]"
           >
             Contact Us
