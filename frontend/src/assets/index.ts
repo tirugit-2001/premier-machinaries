@@ -23,8 +23,22 @@ import tigerfiberlaserc from "./images/tigerfiberlaserc.png";
 import tigerteccnrouter from "./images/tigerteccnrouter.png";
 import yueminglaser from "./images/yueminglaser.png";
 import aecfun from "./images/aecfun.png";
+import fayon from "./images/fayon.png";
+import mefu from "./images/mefu.png";
+import mimaki from "./images/mimaki.png";
+import raytu from "./images/raytu.png";
+import tigertec from "./images/tigertec.png";
+import saga from "./images/saga.png";
+import dobsen from "./images/dobsen.png";
 
 const iconsImages = {
+  saga,
+  dobsen,
+  fayon,
+  mefu,
+  mimaki,
+  tigertec,
+  raytu,
   aecfun,
   facebook,
   instagram,

@@ -60,60 +60,33 @@ const productCategories: ProductType[] = [
 ];
 const brands: Partners[] = [
   {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/54351b9cf4337089076d764fd9394b55657ba25a1fc40bb6bedcae26d296f925?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Dobosen logo in green with stylized D letter",
+    image: iconsImages.dobsen,
+    altText: "Dobsen",
   },
   {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/54351b9cf4337089076d764fd9394b55657ba25a1fc40bb6bedcae26d296f925?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Dobosen logo in green with stylized D letter",
+    image: iconsImages.fayon,
+    altText: "Fayon",
   },
   {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/54351b9cf4337089076d764fd9394b55657ba25a1fc40bb6bedcae26d296f925?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Dobosen logo in green with stylized D letter",
+    image: iconsImages.mefu,
+    altText: "Mefu",
   },
 
   {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/6d2540d9c0cd0192b70732cfdacc37014abfc11a903b1b91efa4f6128a47c061?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Saga logo in blue with red symbol",
+    image: iconsImages.mimaki,
+    altText: "Mimaki",
   },
   {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/6d2540d9c0cd0192b70732cfdacc37014abfc11a903b1b91efa4f6128a47c061?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Saga logo in blue with red symbol",
+    image: iconsImages.raytu,
+    altText: "Raytu",
   },
   {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/54351b9cf4337089076d764fd9394b55657ba25a1fc40bb6bedcae26d296f925?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Dobosen logo in green with stylized D letter",
+    image: iconsImages.tigertec,
+    altText: "tigertec",
   },
   {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/54351b9cf4337089076d764fd9394b55657ba25a1fc40bb6bedcae26d296f925?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Dobosen logo in green with stylized D letter",
-  },
-  {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/6d2540d9c0cd0192b70732cfdacc37014abfc11a903b1b91efa4f6128a47c061?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Saga logo in blue with red symbol",
-  },
-  {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/54351b9cf4337089076d764fd9394b55657ba25a1fc40bb6bedcae26d296f925?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Dobosen logo in green with stylized D letter",
-  },
-  {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/54351b9cf4337089076d764fd9394b55657ba25a1fc40bb6bedcae26d296f925?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Dobosen logo in green with stylized D letter",
-  },
-  {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/6d2540d9c0cd0192b70732cfdacc37014abfc11a903b1b91efa4f6128a47c061?apiKey=00bedd7c3997447984bf9cef0c80b29a&",
-    altText: "Saga logo in blue with red symbol",
+    image: iconsImages.saga,
+    altText: "Saga",
   },
 ];
 const nav_items: NavItemsType[] = [
@@ -173,12 +146,31 @@ const addresses: AddressType[] = [
 
 const productPageCards: ProductPageCardType[] = [
   {
-    title: "Yueming Laser Cutting Machine",
-    image: iconsImages.printer,
-    altText: "High-efficiency solar panel",
+    title: "Allwin Solvent Printer 512i",
+    image: iconsImages.allwintPrinter,
+    subtitle: "Solvent-based ink / High-resolution output",
+    altText: "Allwin Solvent Printer 512i",
     contact_link: "https://example.com/contact",
-    subtitle: "CO2 Laser / Fiber Laser",
-    features: ["Auto Focus", "Efficient cutting"],
+    features: ["Efficient printing", "medium to large-scale projects"],
+  },
+  {
+    title: "Allwin UV Roll to Roll Printer",
+    image: iconsImages.allwinuvRoll,
+    subtitle: "UV-curable ink / High-resolution",
+    altText: "Allwin UV Roll to Roll Printer",
+    contact_link: "https://example.com/contact",
+    features: [
+      "LED UV cold light source technology",
+      "high-quality backlit banner printing",
+    ],
+  },
+  {
+    title: "Allwin Solvent Printer 1024i",
+    image: iconsImages.allwin1024i,
+    subtitle: "Solvent-based ink / High-resolution output",
+    altText: "Allwin Solvent Printer 1024i",
+    contact_link: "https://example.com/contact",
+    features: [" large-scale prints with robust performance"],
   },
   {
     title: "Yueming Laser Cutting Machine",
@@ -189,20 +181,12 @@ const productPageCards: ProductPageCardType[] = [
     features: ["Auto Focus", "Efficient cutting"],
   },
   {
-    title: "Yueming Laser Cutting Machine",
-    image: iconsImages.printer,
-    altText: "High-efficiency solar panel",
+    title: "TigerTec CNC Router",
+    image: iconsImages.tigerteccnrouter,
+    subtitle: "high accuracy/ precision cutting ",
+    altText: "TigerTec CNC Router",
     contact_link: "https://example.com/contact",
-    subtitle: "CO2 Laser / Fiber Laser",
-    features: ["Auto Focus", "Efficient cutting"],
-  },
-  {
-    title: "Yueming Laser Cutting Machine",
-    image: iconsImages.printer,
-    altText: "High-efficiency solar panel",
-    contact_link: "https://example.com/contact",
-    subtitle: "CO2 Laser / Fiber Laser",
-    features: ["Auto Focus", "Efficient cutting"],
+    features: ["cutting, carving", "and engraving with high accuracy"],
   },
 ];
 
@@ -220,16 +204,32 @@ const bannerdata: ProductPageCardType[] = [
     ],
   },
   {
-    title: "Allwin UV Flatbed Printer",
-    image: iconsImages.banneritemimg,
-    altText: "Allwin UV Flatbed Printer",
+    title: "Mefu Lamination Machine",
+    image: iconsImages.mefulamination,
+    subtitle: "lamination / safeguard prints",
+    altText: "Mefu Lamination Machine",
     contact_link: "https://example.com/contact",
     features: [
-      "Media Type: Rigid materials (Acrylic, Glass, Wood, Metal, etc.)",
-      "Resolution: Up to 1440 dpi",
-      "Fast drying, High durability.",
-      "Multi-layer printing",
+      "Provides lamination to safeguard prints from wear and environmental factors",
     ],
+  },
+  {
+    title: "Rayt Laser Cutting Machine",
+    image: iconsImages.raytlasercuttingm,
+    altText: "Rayt Laser Cutting Machine",
+    subtitle: "Precise cuts / Laser Cutting",
+    contact_link: "https://example.com/contact",
+    features: [
+      "Tailored for precise and efficient cutting tasks in signage production",
+    ],
+  },
+  {
+    title: "TigerTec CNC Router",
+    image: iconsImages.tigerteccnrouter,
+    subtitle: "high accuracy/ precision cutting ",
+    altText: "TigerTec CNC Router",
+    contact_link: "https://example.com/contact",
+    features: ["cutting, carving", "and engraving with high accuracy"],
   },
 ];
 
