@@ -28,6 +28,7 @@ import raytu from "./images/raytu.jpeg";
 import tigertec from "./images/tigertec.jpeg";
 import saga from "./images/saga.jpeg";
 import dobsen from "./images/dobsen.jpeg";
+import allwin from "./images/allwin.png";
 
 const iconsImages = {
   saga,
@@ -41,7 +42,7 @@ const iconsImages = {
   facebook,
   instagram,
   twitter,
-
+  allwin,
   banneritemimg,
   printer,
   allwin1024i,

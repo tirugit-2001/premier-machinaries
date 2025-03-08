@@ -15,12 +15,7 @@ const productCategories: ProductType[] = [
     altText: "Printing Machine",
     title: "Printing Machines",
   },
-  {
-    image:
-      "https://baisonlaser.com/wp-content/uploads/2022/12/Laser-Cutting-Machines-for-Stainless-Steel.png",
-    altText: "Laser Cutting Machine",
-    title: "Laser Cutting Machines",
-  },
+
   {
     image:
       "https://machitech.com/wp-content/uploads/2017/02/totalcut-router.jpg",
@@ -70,6 +65,10 @@ const brands: Partners[] = [
     image: iconsImages.saga,
     altText: "Saga",
   },
+  {
+    image: iconsImages.allwin,
+    altText: "Allwin",
+  },
 ];
 const nav_items: NavItemsType[] = [
   { path: "/", title: "Home" },
@@ -102,25 +101,29 @@ const footer_navitmes: FooterNavTypes[] = [
   {
     mainTitle: "Contact Us",
     links: [
-      { path: "tel:+122339999", title: "+122339999" },
-      { path: "tel:+122339999", title: "+122339999" },
-      { path: "@mailto:support@gmail.com", title: "support@gmail.com" },
+      { path: "tel:+917259573500", title: "+917259573500" },
+
+      {
+        path: "@mailto:premiermachineries@yahoo.com",
+        title: "premiermachineries@yahoo.com",
+      },
     ],
   },
 ];
 
 const addresses: AddressType[] = [
   {
-    city: "Bengaluru Office",
-    address: "123 Business Avenue Btm layout 235 9th main road 566020",
-    number: +91123455559,
+    city: "Mangaluru",
+    address: "Gurushree Building, KPT Road, Bejai Mangalore - 575004",
+    number: ["+918951463500", "+917259573500"],
     iframe:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15555.637675812506!2d77.60229031164256!3d12.913543113429203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fc91a93031%3A0xf0afe62576cbdc3f!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1740166043507!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.307213034546!2d74.84834177595872!3d12.887956587419826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35b00086f1d53%3A0xebaa44a668064a4d!2sPremier%20Machineries!5e0!3m2!1sen!2sin!4v1741455509951!5m2!1sen!2sin",
   },
+
   {
-    city: "Mangaluru Office",
-    address: "123 Business Avenue Kavoor 235 9th main road 566020",
-    number: +91123455559,
+    city: "Bengaluru",
+    address: "123 Business Avenue Btm layout 235 9th main road 566020",
+    number: ["+91123455559", "+919299299992"],
     iframe:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15555.637675812506!2d77.60229031164256!3d12.913543113429203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fc91a93031%3A0xf0afe62576cbdc3f!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1740166043507!5m2!1sen!2sin",
   },
@@ -404,9 +407,9 @@ const productPageCardCategory: Record<string, ProductPageCardType[]> = {
 };
 
 const statistics = [
-  { value: "40+", label: "Leading Brands" },
-  { value: "20,000+", label: "Units Supplied Annually" },
-  { value: "100+", label: "Service Excellence Awards" },
+  { value: "10+", label: "Leading Brands" },
+  { value: "1000+", label: "Units Supplied Annually" },
+  { value: "6+", label: "Service Excellence Awards" },
 ];
 
 const productPageNavitems = [

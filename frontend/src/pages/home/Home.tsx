@@ -14,7 +14,7 @@ import { statistics } from "../../utilities";
 const Home: React.FC = () => {
   return (
     <div className="h-full flex flex-col gap-24">
-      <div className=" banner_bg ">
+      <div className="banner_bg">
         <div className="backdrop-blur bg-gray-400/10 py-10">
           <div className="w-[90%] max-[1000px]:w-[100%] mx-auto">
             <Carousel type="banner">
@@ -31,8 +31,7 @@ const Home: React.FC = () => {
         <div className="text-center">
           <h2 className="text-3xl ">Recomended Products</h2>
           <p className="mt-2 max-[600px]:px-3">
-            Integrated enterprise of R&D, production and sales of CNC printing
-            and cutting equipment
+            High-performance machines trusted by professionals
           </p>
         </div>
         <div className="h-[550px] max-[350px]:h-[500px] w-[80%] max-[1000px]:w-[100%] max-[1000px]:px-4">
@@ -43,6 +42,24 @@ const Home: React.FC = () => {
               </SwiperSlide>
             ))}
           </Carousel>
+        </div>
+      </div>
+      <div className="flex flex-col gap-14">
+        <div className="text-center">
+          <h2 className="text-3xl ">Products Category</h2>
+          <p className="mt-2 max-[600px]:px-3">
+            A wide range of printers, cutters, and hybrid systems
+          </p>
+        </div>
+        <div className=" grid  max-[550px]:grid-cols-1 max-[768px]:grid-cols-2 max-[1000px]:grid-cols-3 grid-cols-4 px-8 gap-9  my-0  max-md:gap-6 max-md:p-4 max-sm:gap-5 max-sm:p-3">
+          {productCategories.map((category, index) => (
+            <ProductCard
+              key={index}
+              image={category.image}
+              altText={category.altText}
+              title={category.title}
+            />
+          ))}
         </div>
       </div>
       <div id="about" className=" w-full bg-sky-600 max-md:max-w-full">
@@ -60,19 +77,19 @@ const Home: React.FC = () => {
               <div className="flex flex-col w-full max-md:max-w-full">
                 <h2 className="text-2xl font-semibold">About us</h2>
                 <p className="mt-3 font-light text-[17px] max-[768px]:text-[1rem] leading-7 max-md:max-w-full">
-                  Since its founding in [Year], Premier Machineries has grown
-                  into a leading high-tech enterprise specializing in the R&D,
-                  manufacturing, and distribution of advanced printing and
-                  cutting solutions. Our product range includes UV printers,
-                  solvent printers, laser cutting machines, and hybrid printing
-                  systems, catering to diverse industrial needs.
+                  Since its founding in 2000, Premier Machineries has
+                  established itself as a trusted dealer specializing in
+                  advanced printing and cutting solutions. We offer a wide range
+                  of high-tech machinery, including UV printers, solvent
+                  printers, laser cutting machines, and hybrid printing systems,
+                  catering to diverse industrial needs.
                   <br />
-                  With a state-of-the-art facility spanning [Factory Size] and a
-                  dedicated team of skilled professionals, we ensure top-notch
-                  quality and innovation in every machine. Our commitment to
-                  excellence has enabled us to serve clients in over [Number]
-                  countries, delivering reliable and efficient solutions
-                  worldwide.
+                  With a commitment to quality and innovation, we collaborate
+                  with top manufacturers to provide reliable and efficient
+                  solutions. Our expertise and dedication have enabled us to
+                  serve clients in multiple countries, ensuring superior
+                  performance and customer satisfaction across various
+                  industries.
                 </p>
               </div>
               <div className="flex flex-wrap  max-[1200px]:gap-5 gap-12 items-center self-start  max-[1150px]:mt-5 mt-8 font-semibold max-md:max-w-full">
@@ -92,31 +109,12 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-14">
-        <div className="text-center">
-          <h2 className="text-3xl ">Products</h2>
-          <p className="mt-2 max-[600px]:px-3">
-            Integrated enterprise of R&D, production and sales of CNC printing
-            and cutting equipment
-          </p>
-        </div>
-        <div className=" grid  max-[550px]:grid-cols-1 max-[768px]:grid-cols-2 max-[1000px]:grid-cols-3 grid-cols-4 px-8 gap-9  my-0  max-md:gap-6 max-md:p-4 max-sm:gap-5 max-sm:p-3">
-          {productCategories.map((category, index) => (
-            <ProductCard
-              key={index}
-              image={category.image}
-              altText={category.altText}
-              title={category.title}
-            />
-          ))}
-        </div>
-      </div>
+
       <div className="flex flex-col mb-20 gap-14">
         <div className="text-center">
           <h2 className="text-3xl ">Our Brands</h2>
           <p className="mt-2 max-[600px]:px-3">
-            Integrated enterprise of R&D, production and sales of CNC printing
-            and cutting equipment
+            Leading global brands in printing and cutting solutions
           </p>
         </div>
 

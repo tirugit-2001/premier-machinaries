@@ -20,15 +20,20 @@ const Footer = () => {
               <div className="flex flex-col  gap-4">
                 <h4 className="text-xl">{address.city} Office</h4>
                 <p className=" w-[50%] max-[500px]:w-full">{address.address}</p>
-                <a
-                  href={`${address.number}`}
-                  className="flex items-center gap-2"
-                >
-                  <span>
-                    <IoMdCall />
-                  </span>
-                  {address.number}
-                </a>
+                <div className="flex gap-2 flex-col">
+                  {address.number.map((item, ind) => (
+                    <a
+                      key={ind}
+                      href={`tel:${address.number}`}
+                      className="flex items-center gap-2"
+                    >
+                      <span>
+                        <IoMdCall />
+                      </span>
+                      {item}
+                    </a>
+                  ))}
+                </div>
               </div>
               <div>
                 <iframe
@@ -100,7 +105,12 @@ const Footer = () => {
       <div>
         <p className="text-white max-[500px]:text-start text-center">
           Premiere Machinaries | Design and developed by{" "}
-          <a href="www.pixeltechin.com" className=" no-underline">
+          <a
+            href="https://pixeltechin.com"
+            target="_blank"
+            className=" no-underline"
+            rel="noopener noreferrer"
+          >
             Pixeltechin.com
           </a>
         </p>

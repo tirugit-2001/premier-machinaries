@@ -63,7 +63,7 @@ const Navbar = () => {
             Contact Us
           </a>
           <a
-            href="tel:+91123456979"
+            href="tel:+917259573500"
             className="flex gap-3 items-center px-5 py-2 text-base text-black no-underline rounded-sm border border-sky-600 border-solid transition-all duration-[0.2s] ease-[ease] max-sm:px-4 max-sm:py-1.5 max-sm:text-sm"
           >
             <img
@@ -71,7 +71,7 @@ const Navbar = () => {
               alt="Phone"
               className="object-contain w-4 h-4"
             />
-            <span>+91 123456979</span>
+            <span>+91 72595 73500</span>
           </a>
         </nav>
         <div className="md:hidden ">
@@ -141,7 +141,11 @@ const Navbar = () => {
           <a href="">
             <img src={iconsImages.twitter} alt="twitter" />
           </a>
-          <a href="">
+          <a
+            href="https://www.instagram.com/premiermachineries/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={iconsImages.instagram} alt="instagram" />
           </a>
           <a href="">
@@ -149,11 +153,11 @@ const Navbar = () => {
           </a>
         </div>
         <a
-          href="mailto:support@gmail.com"
+          href="mailto:premiermachineries@yahoo.com"
           className="flex max-[350px]:gap-2 gap-3 text-white items-center"
         >
           <MdEmail className="text-xl max-[350px]:text-lg" />
-          support@gmail.com
+          premiermachineries@yahoo.com
         </a>
       </div>
     </header>

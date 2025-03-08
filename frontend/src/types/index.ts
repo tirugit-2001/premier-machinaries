@@ -31,7 +31,7 @@ interface ProductCard {
 interface AddressType {
   city: string;
   address: string;
-  number: number;
+  number: string[];
   iframe: string;
 }
 interface ProductPageCardType extends Omit<ProductCard, "desc"> {
