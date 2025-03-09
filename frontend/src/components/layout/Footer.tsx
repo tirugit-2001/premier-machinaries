@@ -49,13 +49,15 @@ const Footer = () => {
       </div>
       <div className="flex flex-row justify-between items-start border-red-400 w-full max-md:flex-wrap max-md:gap-10 max-md:p-10 max-sm:flex-col max-sm:p-5">
         <div className="flex flex-col items-start max-md:w-[calc(50%_-_20px)] max-sm:w-full">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/f06f8fb2478dfda44b43333059ae5677070fbfc7fa3a8413ab7237628439a702?apiKey=00bedd7c3997447984bf9cef0c80b29a&"
-            alt={`Premiere Missionaries  logo`}
-            className="object-contain aspect-[1.41] w-[93px]"
-          />
+          <Link to={"/"}>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/00bedd7c3997447984bf9cef0c80b29a/f06f8fb2478dfda44b43333059ae5677070fbfc7fa3a8413ab7237628439a702?apiKey=00bedd7c3997447984bf9cef0c80b29a&"
+              alt={`Premiere Missionaries  logo`}
+              className="object-contain aspect-[1.41] w-[93px]"
+            />
+          </Link>
           <strong className="text-white my-3 max-[500px]:my-1 text-base">
-            Premiere Missionaires
+            Premiere Machinaries
           </strong>
           <h4 className="text-gray-400 text-base">Bengaluru | Mangaluru</h4>
         </div>

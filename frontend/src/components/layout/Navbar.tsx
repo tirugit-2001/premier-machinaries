@@ -4,6 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
+import { IoMdCall } from "react-icons/io";
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -83,7 +84,7 @@ const Navbar = () => {
           )}
         </div>
         {toggle && (
-          <div className="flex  bg-sky-600 absolute top-[150px] p-2 right-10 rounded-2xl h-[50vh] w-1/2 z-13 md:hidden flex-col gap-3 mt-3">
+          <div className="flex  bg-sky-600 absolute top-[150px] p-2 right-10 rounded-2xl h-[50vh] w-[60%]   z-13 md:hidden flex-col gap-3 mt-3">
             <div className="flex justify-end p-2 ">
               <RxCross1
                 onClick={() => setToggle(!toggle)}
@@ -130,6 +131,13 @@ const Navbar = () => {
                 className="gap-1 cursor-pointer text-white hover:text-sky-800"
               >
                 Contact Us
+              </a>
+              <a
+                href="tel:+917259573500"
+                className="flex gap-3 items-center border-2 p-2 text-base text-white no-underline rounded-sm  border-white transition-all duration-[0.2s] ease-[ease] max-sm:px-4 max-sm:py-1.5 max-sm:text-sm"
+              >
+                <IoMdCall />
+                <span>+91 72595 73500</span>
               </a>
             </div>
           </div>
