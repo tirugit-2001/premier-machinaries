@@ -122,10 +122,10 @@ const addresses: AddressType[] = [
 
   {
     city: "Bengaluru",
-    address: "123 Business Avenue Btm layout 235 9th main road 566020",
-    number: ["+91123455559", "+919299299992"],
+    address: "No.3/7-4, Shop no 3, 3rd cross Koramangala Bangalore - 560068",
+    number: ["+917259573500","0824-2218500"],
     iframe:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15555.637675812506!2d77.60229031164256!3d12.913543113429203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fc91a93031%3A0xf0afe62576cbdc3f!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1740166043507!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.370773711805!2d77.61759292362488!3d12.927931176392846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae145eb486d687%3A0x71a734c6f73f0f00!2sKoramangala%203%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka%20560034!5e0!3m2!1sen!2sin!4v1742583145362!5m2!1sen!2sin"
   },
 ];
 
